@@ -1,8 +1,6 @@
-const express = require('express')
 const port = 4000
 
-
-const server = express()
+const server = require('./api/server')
 
 server.get('/', (req, res) => {
     res.status(200).send('hello')
